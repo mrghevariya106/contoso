@@ -70,5 +70,25 @@ The import statement includes references to Flask, which is the core of any Flas
 
 app will be our core application. We'll use it when we register our routes in the next step.
 
+# Add the route
+Our application will use one route - /. This route is sometimes called either the default or the index route, because it's the one that will be used if the user doesn't provide anything beyond the name of the domain or server.
 
+ ## Add the following code to the end of app.py
+       @app.route('/', methods=['GET'])
+       def index():
+              return render_template('index.html')
+
+Create the HTML template for our form
+
+# Test the application
+ Run the following command to set the Flask runtime to development, which means that the server will automatically reload with every change
+ ## Windows
+       set FLASK_ENV=development
+ ## Linux/macOS
+       export FLASK_ENV=development
+
+Run the application!
+       flask run
+
+Open the application in a browser by navigating to http://localhost:5000
 
