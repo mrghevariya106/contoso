@@ -42,14 +42,14 @@ To use a virtual environment, we'll create and activate it. We create it by usin
     source ./venv/bin/activate
 
 # Install Flask and other libraries
-1.In the command or terminal window, run the following command to open the directory in Visual Studio Code:
-    code .
-2.select New File, Name the file requirements.txt, and add the following text:
-    flask
-    python-dotenv
-    requests
-3.Return to the command or terminal window and perform the installation by using pip to run the following command:
-    pip install -r requirements.txt
+ ## 1. In the command or terminal window, run the following command to open the directory in Visual Studio Code:
+        code .
+ ## 2. Select New File, Name the file requirements.txt, and add the following text:
+        flask
+        python-dotenv
+        requests
+ ## 3. Return to the command or terminal window and perform the installation by using pip to run the following command:
+        pip install -r requirements.txt
 
 # Create an app
 We're going to create our application iteratively, focusing on specific concepts as we go. To start, we'll create the landing page for our application, which will display the form the user will use.
@@ -62,10 +62,10 @@ Typically, the entry point for Flask applications is a file named app.py. We're 
 4. Test the application
 
 # Create core application
-1. create a new file named app.py by clicking New file in the Explorer tab
-2. Add the code to create your Flask application
-    from flask import Flask, redirect, url_for, request, render_template, session
-    app = Flask(__name__)
+ ## 1. create a new file named app.py by clicking New file in the Explorer tab
+ ## 2. Add the code to create your Flask application
+        from flask import Flask, redirect, url_for, request, render_template, session
+        app = Flask(__name__)
 The import statement includes references to Flask, which is the core of any Flask application. We'll use render_template in a while, when we want to return our HTML.
 
 app will be our core application. We'll use it when we register our routes in the next step.
